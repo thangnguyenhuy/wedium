@@ -5,13 +5,15 @@ one:
   slug: MyString
   body: MyText
   description: MyString
-  favoristed: false
-  favoritesCount: 1
+  favorited: false
+  favorites_count: 1
+  author: MyString
 
 two:
   title: MyString
   slug: MyString
   body: MyText
   description: MyString
-  favoristed: false
-  favoritesCount: 1
+  favorited: false
+  favorites_count: 1
+  author: MyString

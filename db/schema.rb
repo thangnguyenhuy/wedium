@@ -11,17 +11,18 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180511045313) do
+ActiveRecord::Schema.define(version: 20180512104420) do
 
   create_table "articles", force: :cascade do |t|
     t.string   "title",           limit: 255
     t.string   "slug",            limit: 255
     t.text     "body",            limit: 65535
     t.string   "description",     limit: 255
-    t.boolean  "favoristed",                    default: false
+    t.boolean  "favorited"
     t.integer  "favorites_count", limit: 4
-    t.datetime "created_at",                                    null: false
-    t.datetime "updated_at",                                    null: false
+    t.string   "author",          limit: 255
+    t.datetime "created_at",                    null: false
+    t.datetime "updated_at",                    null: false
   end
 
 end
